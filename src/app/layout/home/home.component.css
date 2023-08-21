@@ -1,0 +1,153 @@
+   /********** Custom CSS ************/
+   .section-title {
+    position: relative;
+    display: inline-block;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #07456b;
+  }
+  
+  .section-title span {
+    position: relative;
+    background: #ffffff;
+    z-index: 1;
+  }
+  
+  .section-title::before {
+    position: absolute;
+    content: "";
+    top: 10px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #07456b;
+  }
+  
+  [class^=flaticon-]:before,
+  [class*=" flaticon-"]:before,
+  [class^=flaticon-]:after,
+  [class*=" flaticon-"]:after {
+    font-size: inherit;
+    margin-left: 0;
+  }
+  
+
+  
+  .navbar-light .navbar-nav .nav-link {
+    padding: 30px 15px;
+    color: #07456b;
+    outline: none;
+  }
+  
+  .navbar-light .navbar-nav .nav-link:hover,
+  .navbar-light .navbar-nav .nav-link.active {
+    color: #e8d943;
+  }
+  
+  @media (max-width: 991.98px) {
+    .navbar-light .navbar-nav .nav-link {
+      padding: 10px 15px;
+    }
+  }
+  
+  .post-carousel .owl-nav {
+    position: absolute;
+    width: 100%;
+    height: 35px;
+    top: 50%;
+    left: 0;
+    margin-top: -20px;
+    padding: 0 45px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+  }
+  
+  .post-carousel .owl-nav .owl-prev,
+  .post-carousel .owl-nav .owl-next {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #00394f;
+    background: #17a2b8;
+    border-radius: 30px;
+    font-size: 18px;
+    opacity: .1;
+    transition: .3s;
+  }
+  
+  .post-carousel:hover .owl-nav .owl-prev,
+  .post-carousel:hover .owl-nav .owl-next {
+    opacity: 1;
+  } 
+  
+  .testimonial-carousel .owl-dots {
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+  .testimonial-carousel .owl-dot {
+    display: inline-block;
+    margin: 0 5px;
+    width: 12px;
+    height: 12px;
+    border-radius: 10px;
+    background: #dddddd;
+  }
+  
+  .testimonial-carousel .owl-dot.active {
+    background: #17a2b8;
+  }
+  
+  .contact-form .help-block ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  .portfolio-item .portfolio-btn {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    bottom: 30px;
+    left: 30px;
+    opacity: 0;
+    transition: .5s;
+  }
+  
+  .portfolio-item:hover .portfolio-btn {
+    opacity: 1;
+    
+  }
+  
+  .team .team-social {
+    top: 0;
+    background: rgba(7, 73, 83, 0.8);
+    opacity: 0;
+    z-index: 1;
+    transition: .5s;
+  }
+  
+  .team:hover .team-social {
+    opacity: 1;
+    outline-offset: 4px;
+    animation: shank 0.25s;
+    color: #07456b;
+  }
+
+  @keyframes shank{
+    10%{
+        transform :rotate(25deg);
+    }
+    20%{
+        transform :rotate(-25deg);
+    }
+    30%{
+        transform :rotate(25deg);
+    }
+    40%{
+        transform :rotate(-25deg);
+    }
+}

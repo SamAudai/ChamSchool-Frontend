@@ -1,0 +1,71 @@
+.footer{    
+    background-image: url("../../../assets/bgBlue.png");
+    background-size: 900px;   
+    padding-bottom: 5px;    
+}
+
+.icon{    
+    outline: 2px solid #e8d943;
+    border-radius: 50px;    
+}
+.icon:hover{
+    outline-offset: 4px;
+    animation: shank 0.25s;
+    color: #07456b;
+}
+.icons{
+    column-gap: 10px;
+}
+h3{
+    color: white;
+}
+
+@keyframes shank{
+    10%{
+        transform :rotate(25deg);
+    }
+    20%{
+        transform :rotate(-25deg);
+    }
+    30%{
+        transform :rotate(25deg);
+    }
+    40%{
+        transform :rotate(-25deg);
+    }
+}
+.back-to-top {
+    position: fixed;
+    font-weight: bolder;    
+    display: none;
+    right: 30px;
+    bottom: 30px;
+    z-index: 11;
+    animation: action 1s infinite alternate;
+  }
+  
+  @keyframes action {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-25px);
+    }
+  }
+
+  a {
+    color: #07456b;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: transparent;
+  }
+  
+  a:hover{  
+    color: #e8d943;     
+  }
+
+  #home #contact #classes #teacher #blog #about :hover{
+    color: #e8d943;
+    transform: translateX(4.5PX);
+    transform: translateY(2.1PX); 
+  }
